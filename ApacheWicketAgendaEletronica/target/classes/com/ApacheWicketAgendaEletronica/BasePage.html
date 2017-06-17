@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Agenda Eletrônica</title>
+
+<!-- ESTILO DA PÀGINA -->
+<style>
+#blocoEsquerdo {
+	width: 17%;
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	float: left;
+	pause: 30px 0px 0px 0px;
+}
+
+#blocoDireito {
+	font-family: 'Yanone Kaffeesatz', arial, serif;
+	width: 100%;
+	float: left text-align: left;
+}
+
+footer {
+	color: #AAA;
+	font-size: 11px;
+	margin: 0;
+	padding: 20px 0 30px 0;
+	float: left;
+	background: #FFF;
+	width: 100%;
+}
+</style>
+
+</head>
+
+<!-- CORPO DA PÁGINA QUE SERVE DE BASE PARA AS OUTRAS PÁGINAS -->
+<body>
+
+	<!-- MENU DE NAVEGAÇÃO -->
+	<div id="blocoEsquerdo">
+
+		<wicket:link>
+			<a href="Index.html">Início</a>
+			<br />
+			<a href="Criar.html">Adicionar Contato</a>
+			<br />
+			<a href="Pesquisar.html">Pesquisar Contato</a>
+		</wicket:link>
+
+	</div>
+
+	<!-- BLOCO DIREITO CORPO DA PÁGINA -->
+	<div id="blocoDireito">
+
+		<!-- AQUI VEM A PÁGINA FILHA -->
+		<wicket:child />
+
+	</div>
+
+	<footer>
+
+		<hr />
+		<h2>Desenvolvedor: Fábio Campêllo</h2>
+
+	</footer>
+
+</body>
+
+</html>
